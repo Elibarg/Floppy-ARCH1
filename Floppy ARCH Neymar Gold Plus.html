@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="menuteste.css">
+    <link rel="stylesheet" type="text/js" href="menuteste.js">
+    <link rel="stylesheet" type="text/css" href="Floppy ARCH Neymar Gold Plus.css">
+    <link rel="icon" href="img/diskmenu.png"png/png">
+    <title>Floppy ARCH Neymar Gold Plus</title>
+
+</head>
+<body>
+
+    <div class="d1"> 
+        <img src="img/disquete gif.gif" width="10%">
+
+        <div class="d2">
+            <img src="img/Neymar disc.png" height="50%" style="margin-top: 25px; margin-right: 10px;margin-left: 10%;">
+            <div class="d3">
+                <h1 style=" color:  white; position: absolute; top: 30% ; left: 50%; animation: fadeInLeftBig 3s;font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; color: yellow;"> Neymar Gold Plus </h1>
+            
+        
+            <font style="font-size: 20px;"> 
+            <label  style="font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; color: yellow; animation: fadeInRightBig 3s; position: absolute; top: 40%; left: 50% " for="tamanho_hd">Tamanho do HD:</label>
+            <select style="font-size: 15px;font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; background-color: #5c5b9c;color: yellow; animation: fadeInLeftBig 3s; position: absolute; top: 45%; left: 50% "id="tamanho_hd" onchange="atualizarPreco()">
+                <option value="1">500gb</option>
+                <option value="2">1TB</option>
+                <option value="4">2TB</option>
+            </select>
+            <label style="font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; color: yellow; animation: fadeInRightBig 3s; position: absolute; top: 55%; left: 50% "  for="preco_hd">Valor:</label>
+            <p style="font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; color: yellow; animation: fadeInLeftBig 3s;  position: absolute; top: 59%; left: 50% " id="preco_hd">R$300</p>
+            <span id="preco_hd" class="preco-hd"></span>
+            
+            </font>
+        <button class="pulha" style="animation: fadeInRightBig 3s; position: absolute; top: 65%; left: 50%; display: block; margin: 0 auto;font-size: 36px; height: 135px;width: 250px;font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; color: yellow;">
+            <a href="FLOPPY ARCH carrinho.html" style="display: block; height: 100%; width: 100%; text-decoration: none; color: inherit;">
+                Adicionar ao carrinho
+            </a>
+            <script type="text/javascript">
+                function atualizarPreco() {
+                    var tamanho = document.getElementById("tamanho_hd").value;
+                    var preco = 0;
+                    if (tamanho == 1) {
+                        preco = 250;
+                    } else if (tamanho == 2) {
+                        preco = 600;
+                    } else if (tamanho == 4) {
+                        preco = 800;
+                    }
+                    document.getElementById("preco_hd").innerHTML = "R$" + preco;
+                }
+            </script>
+            </div>
+
+        </div>
+     <img src="img/diskmenu.png" alt="Menu" id="menu-botao" class="menu-image">
+
+                <ul id="menu">
+                    <li class="menu-item"><a href="FLOPPY ARCH comprar.html">comprar</a></li>
+                    <li class="menu-item"><a href="FLOPPY ARCH carrinho.html">carrinho</a></li>
+                    <li class="menu-item"><a href="FLOPPY ARCH.html">Inicio</a></li>
+                    <li class="menu-item"><a href="FLOPPY ARCH entrar.html">entrar</a></li>
+                <li class="menu-item"><a href="FLOPPY ARCH contato.html">contato</a></li>
+                 </ul>
+                 <img src="img/disquete gif.gif" width="10%">
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="menuteste.js"></script>
+</html>
