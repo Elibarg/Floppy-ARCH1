@@ -9,7 +9,7 @@ label {
       }
   
   select {
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
   }
   .caixa_larga
       {
@@ -17,16 +17,32 @@ label {
           flex-direction: column;
       }
       .pulha
-      {
-          width: 65px;
-          height: 45px;
-          background-color: #5c5b9c;
-          font-size: 16px;
-          cursor: url("cursor.png");
-      }
-      .pulha:hover{
-          background-color: #836cc3;
-      }
+{
+  width: 75px;
+  height: 45px;
+  background-color: yellow;
+  font-size: 16px;
+  cursor: url("cursor.png");
+  color: black;
+}
+.pulha:hover{
+  background-color: #ffd000;
+}
+.pulha2
+              {
+                width: 95px;
+                height: 65px;
+                background-color: rgb(255, 0, 0);
+                font-size: 16px;
+                cursor: url("cursor.png");
+                color: yellow;
+                margin-bottom: 500px;
+                animation: fadeInLeftBig 3s;
+                font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; 
+              }
+              .pulha2:hover{
+                background-color: #ff7300;
+              }
         body
       {
               width: 100%;
